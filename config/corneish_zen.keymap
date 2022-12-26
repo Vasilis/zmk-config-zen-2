@@ -4,45 +4,15 @@
 #include "keycodes.h"
 #include "wrappers.h"
 
-/
-{
-        chosen
-        {
-                zmk, matrix_transform = &default_transform;
-                // zmk,matrix_transform = &five_column_transform;
-        };
+/ {
+  chosen {
+    zmk,matrix_transform = &default_transform;
+    //zmk,matrix_transform = &five_column_transform;
+  };
 };
 
-&sl {
-        release-after-ms = <2000>;
-        quick-release;
-};
-
-/
-{
-        behaviors {
-                as: auto_shift {
-                        compatible = "zmk,behavior-hold-tap";
-                        label = "AUTO_SHIFT";
-                        #binding-cells = <2>;
-                        tapping-term-ms = <220>;
-                        quick-tap-ms = <0>;
-                        flavor = "tap-preferred";
-                        bindings = <&kp>, <&kp>;
-                };
-                hld: tap_cmd {
-                        compatible = "zmk,behavior-hold-tap";
-                        label = "HOLD_TAP";
-                        #binding-cells = <2>;
-                        tapping-term-ms = <180>;
-                        quick-tap-ms = <0>;
-                        flavor = "tap-preferred";
-                        bindings = <&kp>, <&kp>;
-                };
-        };
-
-        keymap
-        {
+/ {
+        keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
@@ -57,8 +27,8 @@
                         bindings = <
                         __TAB__ _________________COLEMAK_L1________________  _________________COLEMAK_R1________________ _BSLH__
                         _LCTRL_ _________________COLEMAK_L2________________  _________________COLEMAK_R2________________ _SQUOT_
-                        _LSHFT_ _________________COLEMAK_L3________________  _________________COLEMAK_R3________________ &hld RIGHT_SHIFT LG(V)
-                                          _LOWER_  &hld LGUI LG(C)  _SPACE_  _ENTER_  _BKSPC_  _RAISE_
+                        _LSHFT_ _________________COLEMAK_L3________________  _________________COLEMAK_R3________________ _RSHFT_
+                                          _LOWER_  _LGUI__  _SPACE_  _ENTER_  _BKSPC_  _RAISE_
                         >;
                 };
 
@@ -74,7 +44,7 @@
                         bindings = <
                         __ESC__ _________________LOWER_L2__________________  _________________LOWER_R2__________________ _______
                         _LCTRL_ ________________NUMBER_LEFT________________  ________________NUMBER_RIGHT_______________ _GRAVE_
-                        _LSHFT_ _________________LOWER_L3__________________  _________________LOWER_R3__________________ &hld RIGHT_SHIFT LG(V)
+                        _LSHFT_ _________________LOWER_L3__________________  _________________LOWER_R3__________________ _RSHFT_
                                                   _______  _LGUI__  _SPACE_  _ENTER_  __DEL__  _______
                         >;
                 };
@@ -91,7 +61,7 @@
                         bindings = <
                         __ESC__ _________________SYM_LEFT__________________  _________________SYM_RIGHT_________________ _______
                         _LCTRL_ _________________RAISE_L2__________________  _________________RAISE_R2__________________ _GRAVE_
-                        _LSHFT_ _________________RAISE_L3__________________  _________________RAISE_R3__________________ &hld RIGHT_SHIFT LG(V)
+                        _LSHFT_ _________________RAISE_L3__________________  _________________RAISE_R3__________________ _RSHFT_
                                                   _______  _LGUI__  _SPACE_  _ENTER_  _BKSPC_  _______
                         >;
                 };
