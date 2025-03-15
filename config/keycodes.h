@@ -107,7 +107,7 @@
 
 #define _SCRSH_ &kp LS(LG(N4))
 
-#define _BTCLR_ &bt BT_CLR
+#define _BTCLR_ &bt BT_CLR_ALL
 #define _BT_00_ &bt BT_SEL 0
 #define _BT_01_ &bt BT_SEL 1
 #define _BT_02_ &bt BT_SEL 2
