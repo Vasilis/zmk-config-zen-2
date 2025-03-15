@@ -26,14 +26,14 @@
 
 #define _________________LOWER_R1__________________         ________________NUMBER_RIGHT_______________
 #define _________________LOWER_R2__________________         _________________FUNC_RIGHT________________
-#define _________________LOWER_R3__________________         _PLUS__ &kp UNDER _PIPE__ &kp LEFT_BRACE &kp RIGHT_BRACE
+#define _________________LOWER_R3__________________         _PLUS__ _MINUS_ _PIPE__ &kp LEFT_BRACE &kp RIGHT_BRACE
 
 #define _________________RAISE_L1__________________         _________________SYM_LEFT__________________
-#define _________________RAISE_L2__________________         _______ _______ &kp C_PLAY_PAUSE &kp C_PREV &kp C_NEXT
+#define _________________RAISE_L2__________________         _BTPRV_ _BTNXT_ &kp C_PLAY_PAUSE &kp C_PREV &kp C_NEXT
 #define _________________RAISE_L3__________________         _BTCLR_ _______ &kp K_MUTE &kp C_VOL_DN &kp C_VOLUME_UP
 
 #define _________________RAISE_R1__________________         _________________SYM_RIGHT_________________
 #define _________________RAISE_R2__________________         _______ _LEFT__  __UP___  _DOWN__ _RIGHT_
-#define _________________RAISE_R3__________________         _EQUAL_ _MINUS_ _______  &kp LEFT_BRACKET &kp RIGHT_BRACKET
+#define _________________RAISE_R3__________________         _EQUAL_ &kp UNDER _______  &kp LEFT_BRACKET &kp RIGHT_BRACKET
 
 // clang-format on
