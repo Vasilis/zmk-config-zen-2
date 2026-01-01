@@ -20,13 +20,13 @@
 #define _________________COLEMAK_R2________________         ___M___    ___N___    ___E___    ___I___    ___O___
 #define _________________COLEMAK_R3________________         ___K___    ___H___    _COMMA_    __DOT__    _FSLH__
 
-#define _________________LOWER_L1__________________         ________________NUMBER_LEFT________________
-#define _________________LOWER_L2__________________         _________________FUNC_LEFT_________________
+#define _________________LOWER_L1__________________         _________________FUNC_LEFT_________________
+#define _________________LOWER_L2__________________         ________________NUMBER_LEFT________________
 #define _________________LOWER_L3__________________         ___________________BLANK___________________
 
-#define _________________LOWER_R1__________________         ________________NUMBER_RIGHT_______________
-#define _________________LOWER_R2__________________         _________________FUNC_RIGHT________________
-#define _________________LOWER_R3__________________         _PLUS__ _MINUS_ _PIPE__ &kp LEFT_BRACE &kp RIGHT_BRACE
+#define _________________LOWER_R1__________________         _________________FUNC_RIGHT________________
+#define _________________LOWER_R2__________________         ________________NUMBER_RIGHT_______________
+#define _________________LOWER_R3__________________         _MINUS_ _PLUS__ _PIPE__ &kp LEFT_BRACE &kp RIGHT_BRACE
 
 #define _________________RAISE_L1__________________         _________________SYM_LEFT__________________
 #define _________________RAISE_L2__________________         _BTPRV_ _BTNXT_ &kp C_PLAY_PAUSE &kp C_PREV &kp C_NEXT
@@ -34,6 +34,6 @@
 
 #define _________________RAISE_R1__________________         _________________SYM_RIGHT_________________
 #define _________________RAISE_R2__________________         _______ _LEFT__  __UP___  _DOWN__ _RIGHT_
-#define _________________RAISE_R3__________________         _EQUAL_ &kp UNDER _______  &kp LEFT_BRACKET &kp RIGHT_BRACKET
+#define _________________RAISE_R3__________________         &kp UNDER _EQUAL_ _______  &kp LEFT_BRACKET &kp RIGHT_BRACKET
 
 // clang-format on
