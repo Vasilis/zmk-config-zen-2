@@ -30,7 +30,7 @@
                         flavor = "tap-preferred";
                         bindings = <&kp>, <&kp>;
                 };
-                hld: tap_cmd {
+                hld: hold_tap {
                         compatible = "zmk,behavior-hold-tap";
                         label = "HOLD_TAP";
                         #binding-cells = <2>;
@@ -100,7 +100,7 @@
                         // -------------------------------------------     -------------------------------------------
                         // | ESC  | F11  | F12  |EXPOSE|MCTRL |LNCHPD|     |SCRSH | HOME | END  |      |      |      |
                         // |LCTRL | BT0  | BT1  | BT2  |APPSW |SPTLT |     |DSK_L | DSK1 | DSK2 | DSK3 | DSK4 | DSK5 |
-                        // |LSHFT |      |      |BTCLR |W_PRV |W_NXT |     |DSK_R | PGDN | PGUP | TABL | TABR |      |
+                        // |LSHFT |      |      |BTCLR |W_PRV |W_NXT |     |DSK_R | PGDN | PGUP |      |      |      |
                         // `-----------------------------------------/     \-----------------------------------------'
                         //                      |      |  GUI | SPC  |     | ENT  | BSPC |      |
                         //                      ----------------------     ----------------------
