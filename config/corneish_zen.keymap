@@ -98,8 +98,8 @@
                 adjust_layer {
                         display-name = "ADJUST";
                         // -------------------------------------------     -------------------------------------------
-                        // | ESC  | F11  | F12  |EXPOSE|      |LNCHPD|     |SCRSH | HOME | END  |      |      |      |
-                        // |LCTRL | BT0  | BT1  | BT2  |      |      |     |DSK_L |MCTRL |      |      |      |      |
+                        // | ESC  | F11  | F12  |      |      |      |     |SCRSH | HOME | END  |      |      |      |
+                        // |LCTRL | BT0  | BT1  | BT2  |      |      |     |DSK_L |MCTRL |EXPOSE|      |      |      |
                         // |LSHFT |BTCLR |      |      |      |      |     |DSK_R | PGDN | PGUP |      |      |      |
                         // `-----------------------------------------/     \-----------------------------------------'
                         //                      |      |  GUI | SPC  |     | ENT  | BSPC |      |

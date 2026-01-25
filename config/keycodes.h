@@ -119,6 +119,5 @@
 // macOS Mission Control keys
 #define _MCTRL_ &kp LC(UP)            // Mission Control
 #define _EXPOS_ &kp LC(DOWN)          // App Exposé
-#define _LNCHP_ &kp F4                // Launchpad
 #define _DSK_L_ &kp LC(LEFT)          // Desktop left
 #define _DSK_R_ &kp LC(RIGHT)         // Desktop right
