@@ -29,8 +29,8 @@
 #define _________________LOWER_R3__________________         _PLUS__ &kp UNDER _PIPE__ &kp LEFT_BRACE &kp RIGHT_BRACE
 
 #define _________________RAISE_L1__________________         _________________SYM_LEFT__________________
-#define _________________RAISE_L2__________________         _BTPRV_ _BTNXT_ &kp C_PLAY_PAUSE &kp C_PREV &kp C_NEXT
-#define _________________RAISE_L3__________________         _BTCLR_ _______ &kp K_MUTE &kp C_VOL_DN &kp C_VOLUME_UP
+#define _________________RAISE_L2__________________         _______ _______ &kp C_PLAY_PAUSE &kp C_PREV &kp C_NEXT
+#define _________________RAISE_L3__________________         _______ _______ &kp K_MUTE &kp C_VOL_DN &kp C_VOLUME_UP
 
 #define _________________RAISE_R1__________________         _________________SYM_RIGHT_________________
 #define _________________RAISE_R2__________________         _______ _LEFT__  __UP___  _DOWN__ _RIGHT_
@@ -39,7 +39,7 @@
 // Adjust layer (tri-layer: Lower + Raise)
 #define _________________ADJUST_L1_________________  &kp F11 &kp F12 _EXPOS_ _MCTRL_ _LNCHP_
 #define _________________ADJUST_L2_________________  _BT_00_ _BT_01_ _BT_02_ _APPSW_ _SPTLT_
-#define _________________ADJUST_L3_________________  _______ _______ _______ _W_PREV _W_NEXT
+#define _________________ADJUST_L3_________________  _______ _______ _BTCLR_ _W_PREV _W_NEXT
 
 #define _________________ADJUST_R1_________________  _SCRSH_ _HOME__ __END__ _______ _______
 #define _________________ADJUST_R2_________________  _DSK_L_ _DSKT1_ _DSKT2_ _DSKT3_ _DSKT4_

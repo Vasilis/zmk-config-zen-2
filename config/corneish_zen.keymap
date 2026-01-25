@@ -81,9 +81,9 @@
                 raise_layer {
                         display-name = "SYMBOL";
                         // -------------------------------------------     -------------------------------------------
-                        // |  TAB |  !   |  @   |  #   |  $   |  %   |     |  ^   |  &   |  *   |  (   |  )   |      |
-                        // |LCTRL |BT_PRV|BT_NXT| PLAY | PREV | NEXT |     |      | left |  up  | down |right |  `   |
-                        // |LSHFT |BT_CLR|      | MUTE |VOLDN |VOLUP |     |  =   |  -   |      |  [   |  ]   |RSH/PS|
+                        // | ESC  |  !   |  @   |  #   |  $   |  %   |     |  ^   |  &   |  *   |  (   |  )   |      |
+                        // |LCTRL |      |      | PLAY | PREV | NEXT |     |      | left |  up  | down |right |  `   |
+                        // |LSHFT |      |      | MUTE |VOLDN |VOLUP |     |  =   |  -   |      |  [   |  ]   |RSH/PS|
                         // `-----------------------------------------/     \-----------------------------------------'
                         //                      |      |  GUI | SPC  |     | ENT  | BSPC |      |
                         //                      ----------------------     ----------------------
@@ -100,7 +100,7 @@
                         // -------------------------------------------     -------------------------------------------
                         // | ESC  | F11  | F12  |EXPOSE|MCTRL |LNCHPD|     |SCRSH | HOME | END  |      |      |      |
                         // |LCTRL | BT0  | BT1  | BT2  |APPSW |SPTLT |     |DSK_L | DSK1 | DSK2 | DSK3 | DSK4 | DSK5 |
-                        // |LSHFT |      |      |      |W_PRV |W_NXT |     |DSK_R | PGDN | PGUP | TABL | TABR |      |
+                        // |LSHFT |      |      |BTCLR |W_PRV |W_NXT |     |DSK_R | PGDN | PGUP | TABL | TABR |      |
                         // `-----------------------------------------/     \-----------------------------------------'
                         //                      |      |  GUI | SPC  |     | ENT  | BSPC |      |
                         //                      ----------------------     ----------------------
