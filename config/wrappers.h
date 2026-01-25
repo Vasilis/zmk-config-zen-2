@@ -26,7 +26,7 @@
 
 #define _________________LOWER_R1__________________         _________________FUNC_RIGHT________________
 #define _________________LOWER_R2__________________         ________________NUMBER_RIGHT_______________
-#define _________________LOWER_R3__________________         _PLUS__ &kp UNDER _PIPE__ &kp LEFT_BRACE &kp RIGHT_BRACE
+#define _________________LOWER_R3__________________         &kp UNDER _PLUS__ _PIPE__ &kp LEFT_BRACE &kp RIGHT_BRACE
 
 #define _________________RAISE_L1__________________         _________________SYM_LEFT__________________
 #define _________________RAISE_L2__________________         _______ _______ &kp C_PLAY_PAUSE &kp C_PREV &kp C_NEXT
@@ -34,7 +34,7 @@
 
 #define _________________RAISE_R1__________________         _________________SYM_RIGHT_________________
 #define _________________RAISE_R2__________________         _______ _LEFT__  __UP___  _DOWN__ _RIGHT_
-#define _________________RAISE_R3__________________         _EQUAL_ _MINUS_ _______  &kp LEFT_BRACKET &kp RIGHT_BRACKET
+#define _________________RAISE_R3__________________         _MINUS_ _EQUAL_ _______  &kp LEFT_BRACKET &kp RIGHT_BRACKET
 
 // Adjust layer (tri-layer: Lower + Raise)
 #define _________________ADJUST_L1_________________  &kp F11 &kp F12 _EXPOS_ _MCTRL_ _LNCHP_
