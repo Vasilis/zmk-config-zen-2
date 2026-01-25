@@ -98,15 +98,15 @@
                 adjust_layer {
                         display-name = "ADJUST";
                         // -------------------------------------------     -------------------------------------------
-                        // | ESC  | F11  | F12  |EXPOSE|MCTRL |LNCHPD|     |SCRSH | HOME | END  |      |      |      |
-                        // |LCTRL | BT0  | BT1  | BT2  |APPSW |SPTLT |     |DSK_L | DSK1 | DSK2 | DSK3 | DSK4 | DSK5 |
-                        // |LSHFT |      |      |BTCLR |W_PRV |W_NXT |     |DSK_R | PGDN | PGUP |      |      |      |
+                        // | ESC  | F11  | F12  |EXPOSE|      |LNCHPD|     |SCRSH | HOME | END  |      |      |      |
+                        // |LCTRL | BT0  | BT1  | BT2  |      |      |     |DSK_L |MCTRL |      |      |      |      |
+                        // |LSHFT |BTCLR |      |      |      |      |     |DSK_R | PGDN | PGUP |      |      |      |
                         // `-----------------------------------------/     \-----------------------------------------'
                         //                      |      |  GUI | SPC  |     | ENT  | BSPC |      |
                         //                      ----------------------     ----------------------
                         bindings = <
                         __ESC__ _________________ADJUST_L1_________________  _________________ADJUST_R1_________________ _______
-                        _LCTRL_ _________________ADJUST_L2_________________  _________________ADJUST_R2_________________ _DSKT5_
+                        _LCTRL_ _________________ADJUST_L2_________________  _________________ADJUST_R2_________________ _______
                         _LSHFT_ _________________ADJUST_L3_________________  _________________ADJUST_R3_________________ _______
                                                   _______  _LGUI__  _SPACE_  _ENTER_  _BKSPC_  _______
                         >;

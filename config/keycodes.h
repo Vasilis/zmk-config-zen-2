@@ -99,22 +99,6 @@
 #define MAC_CUT &kp LG(X)
 #define MAC_SELECT_ALL &kp LG(A)
 
-// Window switching
-#define _W_NEXT &kp LG(GRAVE)         // Next window of current app
-#define _W_PREV &kp LS(LG(GRAVE))     // Previous window of current app
-
-// Brightness (F14/F15 work on macOS)
-#define _BRIMN_ &kp F14               // Brightness down
-#define _BRIMX_ &kp F15               // Brightness up
-
-// Desktop switching (requires enabling in System Settings > Keyboard > Shortcuts > Mission Control)
-#define _DSKT1_ &kp LC(N1)
-#define _DSKT2_ &kp LC(N2)
-#define _DSKT3_ &kp LC(N3)
-#define _DSKT4_ &kp LC(N4)
-#define _DSKT5_ &kp LC(N5)
-#define _DSKT6_ &kp LC(N6)
-
 // Screenshot
 #define _SCRSH_ &kp LS(LG(N4))        // Selection screenshot
 
@@ -136,7 +120,5 @@
 #define _MCTRL_ &kp LC(UP)            // Mission Control
 #define _EXPOS_ &kp LC(DOWN)          // App Exposé
 #define _LNCHP_ &kp F4                // Launchpad
-#define _APPSW_ &kp LG(TAB)           // App Switcher
-#define _SPTLT_ &kp LG(SPACE)         // Spotlight
 #define _DSK_L_ &kp LC(LEFT)          // Desktop left
 #define _DSK_R_ &kp LC(RIGHT)         // Desktop right
