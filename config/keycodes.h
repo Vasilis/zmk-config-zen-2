@@ -56,7 +56,7 @@
 #define __DEL__ &kp DELETE
 #define __ESC__ &kp ESC
 #define _LGUI__ &kp LGUI
-#define _LOWER_ &sl 1
+#define _LOWER_ &mo 1
 #define _RAISE_ &mo 2
 
 #define _LSHFT_ &sk LEFT_SHIFT
@@ -113,3 +113,18 @@
 #define _BT_00_ &bt BT_SEL 0
 #define _BT_01_ &bt BT_SEL 1
 #define _BT_02_ &bt BT_SEL 2
+
+// Navigation keys
+#define _HOME__ &kp HOME
+#define __END__ &kp END
+#define _PGUP__ &kp PAGE_UP
+#define _PGDN__ &kp PAGE_DOWN
+
+// macOS Mission Control keys
+#define _MCTRL_ &kp LC(UP)        // Mission Control
+#define _EXPOS_ &kp LC(DOWN)      // App Exposé
+#define _LNCHP_ &kp F4            // Launchpad
+#define _APPSW_ &kp LG(TAB)       // App Switcher
+#define _SPTLT_ &kp LG(SPACE)     // Spotlight
+#define _DSK_L_ &kp LC(LEFT)      // Desktop left
+#define _DSK_R_ &kp LC(RIGHT)     // Desktop right

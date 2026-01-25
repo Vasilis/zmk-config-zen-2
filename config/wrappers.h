@@ -36,4 +36,13 @@
 #define _________________RAISE_R2__________________         _______ _LEFT__  __UP___  _DOWN__ _RIGHT_
 #define _________________RAISE_R3__________________         _EQUAL_ _MINUS_ _______  &kp LEFT_BRACKET &kp RIGHT_BRACKET
 
+// Adjust layer (tri-layer: Lower + Raise)
+#define _________________ADJUST_L1_________________  &kp F11 &kp F12 _EXPOS_ _MCTRL_ _LNCHP_
+#define _________________ADJUST_L2_________________  _BT_00_ _BT_01_ _BT_02_ _APPSW_ _SPTLT_
+#define _________________ADJUST_L3_________________  _______ _______ _______ _W_PREV _W_NEXT
+
+#define _________________ADJUST_R1_________________  _SCRSH_ _HOME__ __END__ _______ _______
+#define _________________ADJUST_R2_________________  _DSK_L_ _DSKT1_ _DSKT2_ _DSKT3_ _DSKT4_
+#define _________________ADJUST_R3_________________  _DSK_R_ _PGDN__ _PGUP__ o_TABL_ o_TABR_
+
 // clang-format on
