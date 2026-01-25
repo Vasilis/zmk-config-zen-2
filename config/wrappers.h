@@ -43,6 +43,6 @@
 
 #define _________________ADJUST_R1_________________  _SCRSH_ _HOME__ __END__ _______ _______
 #define _________________ADJUST_R2_________________  _DSK_L_ _DSKT1_ _DSKT2_ _DSKT3_ _DSKT4_
-#define _________________ADJUST_R3_________________  _DSK_R_ _PGDN__ _PGUP__ o_TABL_ o_TABR_
+#define _________________ADJUST_R3_________________  _DSK_R_ _PGDN__ _PGUP__ _______ _______
 
 // clang-format on

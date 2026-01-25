@@ -1,12 +1,15 @@
 #define _______ &trans
 
+// Arrow keys
 #define _LEFT__ &kp LEFT
 #define __UP___ &kp UP
 #define _DOWN__ &kp DOWN
 #define _RIGHT_ &kp RIGHT
 
+// Auto-shift macro
 #define AS(keycode) &as LS(keycode) keycode
 
+// Auto-shift letters
 #define ___A___ AS(A)
 #define ___B___ AS(B)
 #define ___C___ AS(C)
@@ -34,6 +37,7 @@
 #define ___Y___ AS(Y)
 #define ___Z___ AS(Z)
 
+// Number keys
 #define ___0___ &kp N0
 #define ___1___ &kp N1
 #define ___2___ &kp N2
@@ -45,30 +49,35 @@
 #define ___8___ &kp N8
 #define ___9___ &kp N9
 
-#define _ARING_ &kp RA(A)
-#define _OSLSH_ &kp RA(O)
-#define _AELIG_ &kp RA(SINGLE_QUOTE)
+// Nordic characters (Option key combos)
+#define _ARING_ &kp RA(A)             // Å
+#define _OSLSH_ &kp RA(O)             // Ø
+#define _AELIG_ &kp RA(SINGLE_QUOTE)  // Æ
 
+// Common keys
 #define _SPACE_ &kp SPACE
 #define __TAB__ &kp TAB
 #define _ENTER_ &kp ENTER
 #define _BKSPC_ &kp BACKSPACE
 #define __DEL__ &kp DELETE
 #define __ESC__ &kp ESC
-#define _LGUI__ &kp LGUI
+#define _LGUI__ &kp LGUI              // Left Command (⌘)
 #define _LOWER_ &mo 1
 #define _RAISE_ &mo 2
 
+// Sticky modifiers
 #define _LSHFT_ &sk LEFT_SHIFT
 #define _RSHFT_ &sk RIGHT_SHIFT
 #define _LCTRL_ &sk LEFT_CONTROL
 #define _LOPT__ &sk LEFT_ALT
 #define _LCMD__ &sk LEFT_COMMAND
 
+// Math symbols
 #define _MINUS_ &kp MINUS
 #define _PLUS__ &kp PLUS
 #define _EQUAL_ &kp EQUAL
 
+// Punctuation
 #define _COMMA_ &kp COMMA
 #define _EXCL__ &kp EXCL
 #define _SCLON_ &kp SEMI
@@ -82,6 +91,7 @@
 #define _SQUOT_ &kp SINGLE_QUOTE
 #define _DQUOT_ &kp DOUBLE_QUOTES
 
+// macOS editing shortcuts
 #define MAC_UNDO &kp LG(Z)
 #define MAC_REDO &kp LS(LG(Z))
 #define MAC_COPY &kp LG(C)
@@ -89,25 +99,27 @@
 #define MAC_CUT &kp LG(X)
 #define MAC_SELECT_ALL &kp LG(A)
 
-#define o_TABL_ &kp LS(LG(LEFT_BRACKET))
-#define o_TABR_ &kp LS(LG(RIGHT_BRACKET))
+// Window switching
+#define _W_NEXT &kp LG(GRAVE)         // Next window of current app
+#define _W_PREV &kp LS(LG(GRAVE))     // Previous window of current app
 
-#define _W_NEXT &kp LG(NON_US_BACKSLASH)
-#define _W_PREV &kp LS(LG(NON_US_BACKSLASH))
+// Brightness (F14/F15 work on macOS)
+#define _BRIMN_ &kp F14               // Brightness down
+#define _BRIMX_ &kp F15               // Brightness up
 
-#define _BRIMN_ &kp F14
-#define _BRIMX_ &kp F15
+// Desktop switching (requires enabling in System Settings > Keyboard > Shortcuts > Mission Control)
+#define _DSKT1_ &kp LC(N1)
+#define _DSKT2_ &kp LC(N2)
+#define _DSKT3_ &kp LC(N3)
+#define _DSKT4_ &kp LC(N4)
+#define _DSKT5_ &kp LC(N5)
+#define _DSKT6_ &kp LC(N6)
 
-#define _DSKT1_ &kp LS(LC(LA(LG(N1))))
-#define _DSKT2_ &kp LS(LC(LA(LG(N2))))
-#define _DSKT3_ &kp LS(LC(LA(LG(N3))))
-#define _DSKT4_ &kp LS(LC(LA(LG(N4))))
-#define _DSKT5_ &kp LS(LC(LA(LG(N5))))
-#define _DSKT6_ &kp LS(LC(LA(LG(N6))))
+// Screenshot
+#define _SCRSH_ &kp LS(LG(N4))        // Selection screenshot
 
-#define _SCRSH_ &kp LS(LG(N4))
-
-#define _BTCLR_ &bt BT_CLR
+// Bluetooth
+#define _BTCLR_ &bt BT_CLR            // Clear current profile's bond
 #define _BTPRV_ &bt BT_PRV
 #define _BTNXT_ &bt BT_NXT
 #define _BT_00_ &bt BT_SEL 0
@@ -121,10 +133,10 @@
 #define _PGDN__ &kp PAGE_DOWN
 
 // macOS Mission Control keys
-#define _MCTRL_ &kp LC(UP)        // Mission Control
-#define _EXPOS_ &kp LC(DOWN)      // App Exposé
-#define _LNCHP_ &kp F4            // Launchpad
-#define _APPSW_ &kp LG(TAB)       // App Switcher
-#define _SPTLT_ &kp LG(SPACE)     // Spotlight
-#define _DSK_L_ &kp LC(LEFT)      // Desktop left
-#define _DSK_R_ &kp LC(RIGHT)     // Desktop right
+#define _MCTRL_ &kp LC(UP)            // Mission Control
+#define _EXPOS_ &kp LC(DOWN)          // App Exposé
+#define _LNCHP_ &kp F4                // Launchpad
+#define _APPSW_ &kp LG(TAB)           // App Switcher
+#define _SPTLT_ &kp LG(SPACE)         // Spotlight
+#define _DSK_L_ &kp LC(LEFT)          // Desktop left
+#define _DSK_R_ &kp LC(RIGHT)         // Desktop right
