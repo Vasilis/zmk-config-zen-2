@@ -20,6 +20,33 @@
                 };
         };
 
+        // Combos: press two adjacent keys simultaneously to trigger output
+        // .-----------------------------------.   .-----------------------------------.
+        // |     |     | W+F |     |     |     |   |     | L+U |     |     |     |     |
+        // |     |     | ESC |     |     |     |   |     |  =  |     |     |     |     |
+        // |-----+-----+-----+-----+-----+-----|   |-----+-----+-----+-----+-----+-----|
+        // |     | A+R | S+T |     |     |     |   |     | N+E | E+I | I+O |     |     |
+        // |     | TAB |  _  |     |     |     |   |     | ENT |  -  | BSP |     |     |
+        // |-----+-----+-----+-----+-----+-----|   |-----+-----+-----+-----+-----+-----|
+        // |     |     |     |     |     |     |   |     | H+, |     |     |     |     |
+        // |     |     |     |     |     |     |   |     |  :  |     |     |     |     |
+        // '-----------------------------------'   '-----------------------------------'
+        combos {
+                compatible = "zmk,combos";
+
+                // Programming symbols
+                combo_underscore { timeout-ms = <40>; key-positions = <14 15>; bindings = <&kp UNDER>; };      // S + T
+                combo_minus      { timeout-ms = <40>; key-positions = <20 21>; bindings = <&kp MINUS>; };      // E + I
+                combo_colon      { timeout-ms = <40>; key-positions = <31 32>; bindings = <&kp COLON>; };      // H + ,
+                combo_equal      { timeout-ms = <40>; key-positions = <7 8>;   bindings = <&kp EQUAL>; };      // L + U
+
+                // Navigation
+                combo_enter      { timeout-ms = <40>; key-positions = <19 20>; bindings = <&kp ENTER>; };      // N + E
+                combo_backspace  { timeout-ms = <40>; key-positions = <21 22>; bindings = <&kp BACKSPACE>; };  // I + O
+                combo_esc        { timeout-ms = <30>; key-positions = <2 3>;   bindings = <&kp ESC>; };        // W + F
+                combo_tab        { timeout-ms = <40>; key-positions = <13 14>; bindings = <&kp TAB>; };        // A + R
+        };
+
         behaviors {
                 as: auto_shift {
                         compatible = "zmk,behavior-hold-tap";
