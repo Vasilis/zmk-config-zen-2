@@ -22,26 +22,34 @@
 
         // Combos: press two adjacent keys simultaneously to trigger output
         // .-----------------------------------.   .-----------------------------------.
-        // |     |     | W+F |     |     |     |   |     | L+U |     |     |     |     |
-        // |     |     | ESC |     |     |     |   |     |  =  |     |     |     |     |
+        // |     |     | W+F | F+P |     |     |   |     | L+U |     |     |     |     |
+        // |     |     | ESC |  +  |     |     |   |     |  =  |     |     |     |     |
         // |-----+-----+-----+-----+-----+-----|   |-----+-----+-----+-----+-----+-----|
-        // |     | A+R | S+T |     |     |     |   |     | N+E | E+I | I+O |     |     |
-        // |     | TAB |  _  |     |     |     |   |     | ENT |  -  | BSP |     |     |
+        // |     | A+R | R+S | S+T |     |     |   |     | N+E | E+I | I+O |     |     |
+        // |     | TAB |  _  | SPC |     |     |   |     | ENT |  -  | BSP |     |     |
         // |-----+-----+-----+-----+-----+-----|   |-----+-----+-----+-----+-----+-----|
         // |     |     |     |     |     |     |   |     | H+, |     |     |     |     |
         // |     |     |     |     |     |     |   |     |  :  |     |     |     |     |
         // '-----------------------------------'   '-----------------------------------'
+        //
+        // Key positions:
+        //  0   1   2   3   4   5       6   7   8   9  10  11
+        // 12  13  14  15  16  17      18  19  20  21  22  23
+        // 24  25  26  27  28  29      30  31  32  33  34  35
+        //             36  37  38      39  40  41
         combos {
                 compatible = "zmk,combos";
 
                 // Programming symbols
-                combo_underscore { timeout-ms = <40>; key-positions = <14 15>; bindings = <&kp UNDER>; };      // S + T
+                combo_underscore { timeout-ms = <40>; key-positions = <14 15>; bindings = <&kp UNDER>; };      // R + S
                 combo_minus      { timeout-ms = <40>; key-positions = <20 21>; bindings = <&kp MINUS>; };      // E + I
                 combo_colon      { timeout-ms = <40>; key-positions = <31 32>; bindings = <&kp COLON>; };      // H + ,
                 combo_equal      { timeout-ms = <40>; key-positions = <7 8>;   bindings = <&kp EQUAL>; };      // L + U
+                combo_plus       { timeout-ms = <40>; key-positions = <3 4>;   bindings = <&kp PLUS>; };       // F + P
 
                 // Navigation
                 combo_enter      { timeout-ms = <40>; key-positions = <19 20>; bindings = <&kp ENTER>; };      // N + E
+                combo_space      { timeout-ms = <40>; key-positions = <15 16>; bindings = <&kp SPACE>; };      // S + T
                 combo_backspace  { timeout-ms = <40>; key-positions = <21 22>; bindings = <&kp BACKSPACE>; };  // I + O
                 combo_esc        { timeout-ms = <30>; key-positions = <2 3>;   bindings = <&kp ESC>; };        // W + F
                 combo_tab        { timeout-ms = <40>; key-positions = <13 14>; bindings = <&kp TAB>; };        // A + R
